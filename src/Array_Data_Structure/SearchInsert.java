@@ -10,7 +10,7 @@ public class SearchInsert {
         while(low<high){
             if(arr[mid] <= target && arr[mid+1] >= target)
                 return mid+1;
-            else if(arr[mid] < target)
+            else if(arr[mid] > target)
                 high = mid;
             else
                 low = mid;
